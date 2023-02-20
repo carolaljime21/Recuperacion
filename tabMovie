@@ -1,0 +1,74 @@
+import play.api.libs.json._
+import scala.util.{Failure, Success, Try}
+import com.github.tototoshi.csv._
+import java.io.File
+import requests.Response
+import scalikejdbc._
+import generarSQL.escapeMysql
+import java.nio.charset.StandardCharsets
+import java.nio.file.{Files, Paths, StandardOpenOption}
+
+object tabMovie extends App{
+
+  val reader = CSVReader.open(new File("src/movie_dataset.csv"))
+  val data = reader.allWithHeaders()
+  reader.close()
+
+  val newData = data
+    .map(row => (
+      row("original_title"),
+      row("original_language"),
+      row("id").toInt,
+      row("revenue").toLong,
+      row("popularity").toDouble)).take(200)
+
+
+  //LLENAR CON SENTENCIAS SQL
+  Class.forName("com.mysql.cj.jdbc.Driver")
+  ConnectionPool.singleton("jdbc:mysql://localhost:3306/practica", "root", "Carol210504")
+  implicit val session = AutoSession
+
+  newData.map(x =>
+    sql"""
+         |INSERT INTO movie(original_title, original_language, original_id, revenue, popularity)
+            VALUES (${x._1}, ${x._2}, ${x._3}, ${x._4}, ${x._5})
+         |""".stripMargin.update.apply()
+  )
+
+  //LLENAR CON SCRIPT
+  val SQL_INSERT_PATTERN =
+    """INSERT INTO MOVIE (`original_title`,`original_language`,`original_id`,`revenue`,`popularity` )
+      |VALUES
+      |'%s', '%s', '%d', '%d', '%f');
+      |"""
+      .stripMargin
+
+  val scriptData = newData
+    .map(movie => SQL_INSERT_PATTERN.formatLocal(java.util.Locale.US,
+      escapeMysql(movie._1),
+      escapeMysql(movie._2),
+      movie._3,
+      movie._4,
+      movie._5
+    ))
+
+  val scriptFile = new File("src/scripts/movie.sql")
+  if (scriptFile.exists()) scriptFile.delete()
+  scriptData.foreach(insert =>
+    Files.write(Paths.get("src/scripts/movie.sql")
+      , insert.getBytes(StandardCharsets.UTF_8)
+      , StandardOpenOption.CREATE, StandardOpenOption.APPEND)
+  )
+
+}
+
+//////
+libraryDependencies += "com.github.tototoshi" %% "scala-csv" % "1.3.10"
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.9.3"
+libraryDependencies += "io.github.cibotech" %% "evilplot" % "0.8.1"
+libraryDependencies += "org.scalikejdbc" %% "scalikejdbc" % "4.0.0"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
+libraryDependencies += "com.mysql" % "mysql-connector-j" % "8.0.31"
+libraryDependencies += "com.lihaoyi" %% "requests" % "0.8.0"
+libraryDependencies += "com.typesafe.slick" %% "slick" % "3.3.2"
+libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.31"
