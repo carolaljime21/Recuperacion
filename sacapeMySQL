@@ -1,0 +1,13 @@
+object generarSQL {
+
+  def escapeMysql(text: String): String = text.replaceAll("\\\\", "\\\\\\\\")
+    .replaceAll("\b", "\\\\b")
+    .replaceAll("\n", "\\\\n")
+    .replaceAll("\r", "\\\\r")
+    .replaceAll("\t", "\\\\t")
+    .replaceAll("\\x1A", "\\\\Z")
+    .replaceAll("\\x00", "\\\\0")
+    .replaceAll("'", "\\\\'")
+    .replaceAll("\"", "\\\\\"")
+
+}
