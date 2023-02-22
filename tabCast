@@ -1,0 +1,1195 @@
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sam Worthington' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sam Worthington' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sam Worthington' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sam Worthington' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+    """.stripMargin.update.apply()
