@@ -1,0 +1,60 @@
+import play.api.libs.json.{Json, _}
+import scala.util.{Failure, Success, Try}
+import com.github.tototoshi.csv._
+import java.io.File
+import requests.Response
+import scalikejdbc._
+import generarSQL.escapeMysql
+import java.nio.charset.StandardCharsets
+import java.nio.file.{Files, Paths, StandardOpenOption}
+
+
+object tabProductionCompanies extends App {
+
+  Class.forName("com.mysql.cj.jdbc.Driver")
+  ConnectionPool.singleton("jdbc:mysql://localhost:3306/practica", "root", "Carol210504")
+  implicit val session = AutoSession
+
+  val movOrTit = sql"""SELECT original_title FROM movie""".map(rs => rs.string("original_title")).list.apply()
+  val comName = sql"""SELECT name FROM companie""".map(rs => rs.string("name")).list.apply()
+
+  val producCompanies = movOrTit.zip(comName)
+
+  /*
+    producCompanies.foreach {
+      productC =>
+        sql"""INSERT INTO production_companies (mov_id, comp_id)
+        VALUES
+        ((SELECT id FROM movie WHERE original_title = ${productC._1}),
+        (SELECT id FROM companie WHERE name = ${productC._2}))
+        """.stripMargin.update.apply()
+    }
+    
+   */
+  val movId = sql"""SELECT id FROM movie""".map(rs => rs.int("id")).list.apply()
+  val compId = sql"""SELECT id FROM companie""".map(rs => rs.int("id")).list.apply()
+
+  val idsData = movId.zip(compId)
+
+  val SQL_INSERT_PATTERN =
+    """INSERT INTO SPOKEN_LANGUAGE (`mov_id`,`comp_id`)
+      |VALUES
+      |'%d', '%d');
+      |"""
+      .stripMargin
+
+  val scriptData = idsData
+    .map(movie => SQL_INSERT_PATTERN.formatLocal(java.util.Locale.US,
+      movie._1,
+      movie._2
+    ))
+
+  val scriptFile = new File("src/scripts/companie.sql")
+  if (scriptFile.exists()) scriptFile.delete()
+  scriptData.foreach(insert =>
+    Files.write(Paths.get("src/scripts/companie.sql")
+      , insert.getBytes(StandardCharsets.UTF_8)
+      , StandardOpenOption.CREATE, StandardOpenOption.APPEND)
+  )
+
+}
