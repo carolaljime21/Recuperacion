@@ -1,0 +1,771 @@
+  import play.api.libs.json.{Json, _}
+import scala.util.{Failure, Success, Try}
+import com.github.tototoshi.csv._
+import java.io.File
+import requests.Response
+import scalikejdbc._
+import generarSQL.escapeMysql
+import java.nio.charset.StandardCharsets
+import java.nio.file.{Files, Paths, StandardOpenOption}
+
+object tabCastActors extends App{
+
+  Class.forName("com.mysql.cj.jdbc.Driver")
+  ConnectionPool.singleton("jdbc:mysql://localhost:3306/practica", "root", "Carol210504")
+  implicit val session = AutoSession
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sam Worthington' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Zoe Saldana' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Sigourney Weaver' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Stephen Lang' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+    SELECT p.id, m.id, 'Actor'
+    FROM person p, movie m
+    WHERE p.name = 'Michelle Rodriguez' AND m.original_title = 'Avatar'
+    """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Johnny Depp' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Orlando Bloom' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Keira Knightley' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Stellan Skarsgård' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Chow Yun-fat' AND m.original_title = 'Pirates of the Caribbean: At World''s End'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Daniel Craig' AND m.original_title = 'Spectre'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Christoph Waltz' AND m.original_title = 'Spectre'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Léa Seydoux' AND m.original_title = 'Spectre'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ralph Fiennes' AND m.original_title = 'Spectre'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Monica Bellucci' AND m.original_title = 'Spectre'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Christian Bale' AND m.original_title = 'The Dark Knight Rises'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Michael Caine' AND m.original_title = 'The Dark Knight Rises'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Gary Oldman' AND m.original_title = 'The Dark Knight Rises'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Tom Hardy' AND m.original_title = 'The Dark Knight Rises'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Tom Hardy' AND m.original_title = 'John Carter'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Taylor Kitsch' AND m.original_title = 'John Carter'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Lynn Collins' AND m.original_title = 'John Carter'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Samantha Morton' AND m.original_title = 'John Carter'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Thomas Haden Church' AND m.original_title = 'John Carter'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Tobey Maguire' AND m.original_title = 'Spider-Man 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Kirsten Dunst' AND m.original_title = 'Spider-Man 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'James Franco' AND m.original_title = 'Spider-Man 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Topher Grace' AND m.original_title = 'Spider-Man 3'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Zachary Levi' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Mandy Moore' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Donna Murphy' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ron Perlman' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Zachary Levi' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ron Perlman' AND m.original_title = 'Tangled'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Robert Downey Jr.' AND m.original_title = 'Avengers: Age of Ultron'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Chris Hemsworth' AND m.original_title = 'Avengers: Age of Ultron'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Mark Ruffalo' AND m.original_title = 'Avengers: Age of Ultron'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Chris Evans' AND m.original_title = 'Avengers: Age of Ultron'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Scarlett Johansson' AND m.original_title = 'Avengers: Age of Ultron'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Daniel Radcliffe' AND m.original_title = 'Harry Potter and the Half-Blood Prince'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Rupert Grint' AND m.original_title = 'Harry Potter and the Half-Blood Prince'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Emma Watson' AND m.original_title = 'Harry Potter and the Half-Blood Prince'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Tom Felton' AND m.original_title = 'Harry Potter and the Half-Blood Prince'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Michael Gambon' AND m.original_title = 'Harry Potter and the Half-Blood Prince'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ben Affleck' AND m.original_title = 'Batman v Superman: Dawn of Justice'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Henry Cavill' AND m.original_title = 'Batman v Superman: Dawn of Justice'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Gal Gadot' AND m.original_title = 'Batman v Superman: Dawn of Justice'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Amy Adams' AND m.original_title = 'Batman v Superman: Dawn of Justice'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Jesse Eisenberg' AND m.original_title = 'Batman v Superman: Dawn of Justice'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Brandon Routh' AND m.original_title = 'Superman Returns'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Kevin Spacey' AND m.original_title = 'Superman Returns'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Kate Bosworth' AND m.original_title = 'Superman Returns'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'James Marsden' AND m.original_title = 'Superman Returns'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Parker Posey' AND m.original_title = 'Superman Returns'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Daniel Craig' AND m.original_title = 'Quantum of Solace'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Olga Kurylenko' AND m.original_title = 'Quantum of Solace'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Mathieu Amalric' AND m.original_title = 'Quantum of Solace'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Judi Dench' AND m.original_title = 'Quantum of Solace'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Giancarlo Giannini' AND m.original_title = 'Quantum of Solace'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Jhonny Deep' AND m.original_title = 'Pirates of the Caribbean: Dead Man''s Chest'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Orlando Bloom' AND m.original_title = 'Pirates of the Caribbean: Dead Man''s Chest'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Keira Knightley' AND m.original_title = 'Pirates of the Caribbean: Dead Man''s Chest'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Stellan Skarsgård' AND m.original_title = 'Pirates of the Caribbean: Dead Man''s Chest'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Bill Nighty' AND m.original_title = 'Pirates of the Caribbean: Dead Man''s Chest'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Jhonny Deep' AND m.original_title = 'The Lone Ranger'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Armie Hammer' AND m.original_title = 'The Lone Ranger'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'William Fichtner' AND m.original_title = 'The Lone Ranger'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Helena Bonham Carter' AND m.original_title = 'The Lone Ranger'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'James Badge Dale' AND m.original_title = 'The Lone Ranger'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Henry Cavil' AND m.original_title = 'Man of Steel'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Amy Adams' AND m.original_title = 'Man of Steel'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Michael Shannon' AND m.original_title = 'Man of Steel'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Kevin Costner' AND m.original_title = 'Man of Steel'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Diane Lane' AND m.original_title = 'Man of Steel'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ben Barnes' AND m.original_title = 'The Chronicles of Narnia: Prince Caspian'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'William Moseley' AND m.original_title = 'The Chronicles of Narnia: Prince Caspian'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Anna Popplewell' AND m.original_title = 'The Chronicles of Narnia: Prince Caspian'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Skandar Keynes' AND m.original_title = 'The Chronicles of Narnia: Prince Caspian'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Georgie Henley' AND m.original_title = 'The Chronicles of Narnia: Prince Caspian'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Robert Downey Jr.' AND m.original_title = 'The Avengers'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Chris Evans' AND m.original_title = 'The Avengers'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Mark Ruffalo' AND m.original_title = 'The Avengers'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Chris Hemsworth' AND m.original_title = 'The Avengers'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Scarlett Johansson' AND m.original_title = 'The Avengers'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Jhonny Deep' AND m.original_title = 'Pirates of the Caribbean: On Stranger Tides'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Penélope Cruzh' AND m.original_title = 'Pirates of the Caribbean: On Stranger Tides'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ian McShane' AND m.original_title = 'Pirates of the Caribbean: On Stranger Tides'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Kevin McNally' AND m.original_title = 'Pirates of the Caribbean: On Stranger Tides'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Geoffrey Rush' AND m.original_title = 'Pirates of the Caribbean: On Stranger Tides'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Will Smith' AND m.original_title = 'Men in Black 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Tommy Lee Jones' AND m.original_title = 'Men in Black 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Josh Brolin' AND m.original_title = 'Men in Black 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Michael Stuhlbarg' AND m.original_title = 'Men in Black 3'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Emma Thompson' AND m.original_title = 'Men in Black 3'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Martin Freeman' AND m.original_title = 'The Hobbit: The Battle of the Five Armies'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ian McKellen' AND m.original_title = 'The Hobbit: The Battle of the Five Armies'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ken Stott' AND m.original_title = 'The Hobbit: The Battle of the Five Armies'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Richard Armitage' AND m.original_title = 'The Hobbit: The Battle of the Five Armies'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Graham McTavish' AND m.original_title = 'The Hobbit: The Battle of the Five Armies'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Andrew Garfield' AND m.original_title = 'The Amazing Spider-Man'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Emma Stone' AND m.original_title = 'The Amazing Spider-Man'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Rhys Ifans' AND m.original_title = 'The Amazing Spider-Man'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Denis Leary' AND m.original_title = 'The Amazing Spider-Man'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Campbell Scott' AND m.original_title = 'The Amazing Spider-Man'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Russell Crowe' AND m.original_title = 'Robin Hood'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Cate Blanchett' AND m.original_title = 'Robin Hood'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Max von Sydow' AND m.original_title = 'Robin Hood'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'William Hurt' AND m.original_title = 'Robin Hood'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Mark Strong' AND m.original_title = 'Robin Hood'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Martin Freeman' AND m.original_title = 'The Hobbit: The Desolation of Smaug'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ian McKellen' AND m.original_title = 'The Hobbit: The Desolation of Smaug'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Richard Armitage' AND m.original_title = 'The Hobbit: The Desolation of Smaug'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Ken Stott' AND m.original_title = 'The Hobbit: The Desolation of Smaug'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Graham McTavish' AND m.original_title = 'The Hobbit: The Desolation of Smaug'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Dakota Blue Richards' AND m.original_title = 'The Golden Compass'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Nicole Kidman' AND m.original_title = 'The Golden Compass'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Daniel Craig' AND m.original_title = 'The Golden Compass'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Sam Elliott' AND m.original_title = 'The Golden Compass'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Eva Green' AND m.original_title = 'The Golden Compass'
+     """.stripMargin.update.apply()
+
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Naomi Watts' AND m.original_title = 'King Kong'
+     """.stripMargin.update.apply()
+
+  sql"""INSERT INTO cast (per_id, mov_id, role)
+     SELECT p.id, m.id, 'Actor'
+     FROM person p, movie m
+     WHERE p.name = 'Jack Black' AND m.original_title = 'King Kong'
+     """.stripMargin.update.apply()
+}
