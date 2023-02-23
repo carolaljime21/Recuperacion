@@ -48,10 +48,10 @@ object question1 extends App{
     txtOr
   }
 
-  val list = data
+   val list = data
     .map(row => (row("original_language"), row("production_companies")))
   val groupedCrew = list.groupBy(_._1)
-  val crewWithMovieId = groupedCrew.map { case (lan, crewList) =>
+  val crewWithMovieId = groupedCrew.flatMap { case (lan, crewList) =>
     val crew = crewList.map(_._2)
       .map(replacePattern2)
       .map(replacePattern)
@@ -68,5 +68,10 @@ object question1 extends App{
         escapeMysql(jsObj("name").as[String])))
     crew
   }.toList.distinct
+
+  val f = new File("src/movie-companies.csv")
+  val writer = CSVWriter.open(f)
+  writer.writeAll(crewWithMovieId.map(c => List(c._1, c._2, c._3)).toList)
+  writer.close()
 
 }
