@@ -15,40 +15,11 @@ object question1 extends App{
     val data = reader.allWithHeaders()
     reader.close()
 
-  def replacePattern(original: String): String = {
-    var txtOr = original
-    val pattern: Regex = "(\\s\"(.*?)\",)".r
-    for (m <- pattern.findAllIn(original)) {
-      val textOriginal = m
-      val replacementText = m.replace("'", "-u0027")
-      txtOr = txtOr.replace(textOriginal, replacementText)
-    }
-    txtOr
-  }
+      val reader = CSVReader.open(new File("src/movie_dataset.csv"))
+    val data = reader.allWithHeaders()
+    reader.close()
 
-  def replacePattern2(original: String): String = {
-    var txtOr = original
-    val pattern: Regex = "([a-z]\\s\"(.*?)\"\\s*[A-Z])".r
-    for (m <- pattern.findAllIn(original)) {
-      val textOriginal = m
-      val replacementText = m.replace("\"", "-u0022")
-      txtOr = txtOr.replace(textOriginal, replacementText)
-    }
-    txtOr
-  }
-
-  def replacePattern3(original: String): String = {
-    var txtOr = original
-    val pattern: Regex = "(:\\s'\"(.*?)',)".r
-    for (m <- pattern.findAllIn(original)) {
-      val textOriginal = m
-      val replacementText = m.replace("\"", "-u0022")
-      txtOr = txtOr.replace(textOriginal, replacementText)
-    }
-    txtOr
-  }
-
-   val list = data
+  val list = data
     .map(row => (row("original_language"), row("production_companies")))
   val groupedCrew = list.groupBy(_._1)
   val crewWithMovieId = groupedCrew.flatMap { case (lan, crewList) =>
@@ -64,14 +35,16 @@ object question1 extends App{
       .map(_.get)
       .flatMap(_.as[JsArray].value)
       .map(_.as[JsObject])
-      .map(jsObj => (lan, jsObj("id").as[Int],
-        escapeMysql(jsObj("name").as[String])))
+      .map(jsObj => (lan, escapeMysql(jsObj("name").as[String]), jsObj("id").as[Int]))
     crew
-  }.toList.distinct
+  }.toList
+
+  val header = Array("original_language", "name", "id")
+  val dataCom = crewWithMovieId.map(c => Array(c._1.toString, c._2.toSring, c._3.toInt)).toList
 
   val f = new File("src/movie-companies.csv")
   val writer = CSVWriter.open(f)
-  writer.writeAll(crewWithMovieId.map(c => List(c._1, c._2, c._3)).toList)
+  writer.writeAll(header :: dataCom)
   writer.close()
 
 }
